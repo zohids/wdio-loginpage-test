@@ -2,7 +2,6 @@ import LoginPage from '../page/login.page.js';
 
 describe('Login page testing', () => {
     it('Wrong login (negative testing)', async () => {
-
         await LoginPage.open()
         await LoginPage.username.setValue('username1')
         await LoginPage.password.setValue('SuperSecretPassword!')
@@ -11,7 +10,6 @@ describe('Login page testing', () => {
 
     });
     it('Wrong password (negative testing)', async () => {
-
         await LoginPage.open()
         await LoginPage.username.setValue('tomsmith')
         await LoginPage.password.setValue('SuperSecretPassword!!')
@@ -20,7 +18,6 @@ describe('Login page testing', () => {
 
     });
     it('Wrong username and password (negative testing)', async () => {
-
         await LoginPage.open()
         await LoginPage.username.setValue('username')
         await LoginPage.password.setValue('wrongPassword!!')
@@ -29,7 +26,6 @@ describe('Login page testing', () => {
 
     });
     it('Correct login credentials (positive testing)', async () => {
-
         await LoginPage.open()
         await LoginPage.username.setValue('tomsmith')
         await LoginPage.password.setValue('SuperSecretPassword!')
