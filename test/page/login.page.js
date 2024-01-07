@@ -4,6 +4,10 @@ class LoginPage extends BasePage {
     open() {
         return super.open("login")
     }
+    get pause() {
+        //The value of ms can be changed for preference
+        return 5000
+    }
     get username() {
         return $('#username')
     }
